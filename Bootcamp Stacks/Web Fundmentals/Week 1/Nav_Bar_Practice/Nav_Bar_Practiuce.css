@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src:"https://assets.codepen.io/6554302/Roboto-Regular.ttf";
+}
+@@font-face {
+  font-family:"Roboto Bold";
+  src:"https://assets.codepen.io/6554302/Roboto-Bold.ttf";
+}
+body{
+  font-family: 'Roboto Regular', sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+ul li {
+  display: inline-block;
+  text-align: right;
+}
+.nav-button{
+  background-color: aqua;
+  color: white;
+}
+.nav-links{
+  position: relative; right: -715px;
+  margin-right: -290px;
+
+}
+.nav-title {
+  text-align: left;
+  float:left;
+  position: fixed;
+}
+.nav {
+  display: flex;
+  position: fixed; top:0px;
+;  background-color: rgb(51,51,51);
+  height: 60px;
+  width: 100vw;
+  align-items: end;
+  vertical-align: middle;
+
+}
+href {
+  text-decoration: none !important;
+}

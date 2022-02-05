@@ -1,0 +1,38 @@
+.card_container {
+  height: 400px;
+  width: 600px;
+  border: 1px solid;
+  border-color: grey;
+}
+.top-area {
+  height: 132px;
+  width: inherit;
+  border: 1px solid;
+  border-color: rgb(73,160,181);
+  background-color:  rgb(73,160,181);
+}
+.top-area img {
+  position:relative; left: px; top: 114px;
+  max-width: 12.5%;
+}
+.name{
+  margin-left: 75px;
+}
+.city {
+  margin-left: 75px;
+  display: inline-block;
+}
+#marker {
+  position: absolute; left: 10px; top:40px
+  height: 1em;
+}
+.text {
+  margin-left:50px;
+}
+.edit-profile {
+  margin-left: 40px;
+}
+#gear{
+  max-width: 5%;
+
+}

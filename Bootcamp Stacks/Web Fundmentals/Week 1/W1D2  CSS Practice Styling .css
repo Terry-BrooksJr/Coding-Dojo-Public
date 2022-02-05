@@ -1,0 +1,27 @@
+h1 {
+  background-color: black;
+  border: black;
+  height: 55px;
+  width: 100 vw;
+  text-align: left;
+  color: white;
+  margin: 0px
+  padding: 0px;.
+}
+span {
+  color: aqua;
+}
+h2 {
+  height: 45px;
+  width: 100 vw;
+  text-align: center;
+  color: white;
+  background-color: mediumpurple;
+}
+h3 {
+  height: 35px;
+  width: 100 vw;
+  text-align: right;
+  padding-right: 20px;
+  background-color: cornflowerblue;
+}

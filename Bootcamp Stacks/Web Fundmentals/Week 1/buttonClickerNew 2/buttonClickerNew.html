@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Clicker</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="./buttonClickerNew.css">
+</head>
+<body>
+  <div class="main">
+    <div class="search">
+      <div id="dojonary-title">
+        <h1>Dojonary</h1>
+      </div>
+      <input type="search" name="search-field" id="search-field" placeholder="Search">
+      <button onclick="buttonUpdate()" type="button" name="login" id="login">Login</button>
+    </div>
+    <!--Start-of-Main-Section-->
+    <!--definition 1-->
+    <div class="left-group">
+      <div id="primary-parent">
+        <div class="definition-box flex">
+          <div class="ninja-definition-title-word">
+            <h1>ninja</h1>
+          </div>
+          <div class="part-of-speech">
+            <h4><em>noun</em></h4>
+          </div>
+          <div class="plural">
+          </div>
+          <div id="definition-copy1">
+            <p>A practinoner skilled in the <a href="somelink.com">Japanese</a> art of <a href="sumlink.org">ninjutsu</a></p>
+          </div>
+          <div class="like-button-container">
+            <button onclick="alert('Ninjas Was Liked')" type="button" name="like-button" class="like-button">13 likes</button>
+          </div>
+        </div>
+        <!-- definition-2 -->
+        <div class="definition-box ">
+          <div class="ninja-definition-title-word">
+            <h1>ninja</h1>
+          </div>
+          <div class="part-of-speech">
+            <h4><em>noun</em></h4>
+            <h6>plural:<em>ninjas</em></h6>
+          </div>
+            <div id="definition-copy2">
+              <p>A <a href="fjasdkfj">programmer</a> who breaks down problems with <a href="dffds">zen</a>-like focus</p>
+            </div>
+            <div class="like-button-container">
+              <button onclick="alert('Ninjas Was Liked')" type="button" name="like-button" class="like-button">37 likes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+      <!-- add definition -->
+
+      <div id="add-definition">
+        <div id="add-definition-copy">
+          <h2>Dojonary is <br> defined by <span>YOU</span></h2>
+        </div>
+        <div class="add-definition-button">
+          <button onclick="disappear()" type="button" name="add-definition" id="add-button">Add Definition</button>
+        </div>
+      </div>
+  </div>
+  <script src="./buttonClickerNew.js" type="text/javascript"></script>
+</body>
+
+</html>

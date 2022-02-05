@@ -1,0 +1,32 @@
+body{
+  margin: 10px;
+}
+#search {
+  height:5px;;
+  width:  200px;
+  padding: 10px;
+  border: 10em darkseagreen;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top-left-radius:15%;
+  border-top-right-radius: 15%;
+  text-align: center;
+  line-height: 0px;
+  background-color: lightgrey;
+  color: darkseagreen;
+
+}
+
+#plus{
+  border-radius: 50%;
+  height: auto;
+  background-color: lightseagreen;
+  color: white;
+  height: 50%;
+width: auto;
+display: block;
+}
+
+#create{
+  box-shadow: 15px;
+}
