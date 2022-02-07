@@ -21,7 +21,7 @@ else:
     print("It's lower")
 
 if len(string) < 5:
-    print("It's a short word!")
+    print("It's a1short word!")
 elif len(string) > 15:
     print("It's a long word!")
 else:
