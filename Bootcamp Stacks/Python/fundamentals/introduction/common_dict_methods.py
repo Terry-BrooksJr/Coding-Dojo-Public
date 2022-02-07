@@ -22,7 +22,9 @@ clear_test = dict.clear() # removes all elements from the dictionary
 print(clear_test)
 copy_test=dic.copy() # returns a shallow copy dictionary
 print(copy_test)
-.fromkeys(sequence, [value] ) # create a new dictionary with keys from sequence and values set to value.
+
+from_keys_test= dict2.fromkeys(sequence, [value] ) # create a new dictionary with keys from sequence and values set to value.
+print(from_keys_test)
 .get(key, default#None) # For key key, returns value or default if key is not in dictionary.
 .has_key(key) # returns true if a given key is available in the dictionary, otherwise it returns false.
 .items() # returns a list of dictionary's (key, value) tuple pairs.
