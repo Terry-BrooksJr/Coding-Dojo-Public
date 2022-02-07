@@ -1,5 +1,9 @@
 {
     "cSpell.words": [
         "Jalepenos"
-    ]
+    ],
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "prettier.resolveGlobalModules": true,
+    "python.globalModuleInstallation": true,
+    "prettier.withNodeModules": true
 }

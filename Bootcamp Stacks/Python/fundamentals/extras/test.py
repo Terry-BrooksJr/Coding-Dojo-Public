@@ -19,19 +19,23 @@ def singleline_diff(line1, line2):
 
       Returns IDENTICAL if the two lines are the same.
     """
-    line1_split = line1.split();
-    line2_split = line2.split();
-    for x, y in zip(line1_split,line2_split):
-        if x != y:
-            diff_index = line1_split.index(x)
-            return diff_index
-        # comment: 
+    # for x in line1:
+    #       for y in line2:  
+    #             if x =! y:
+    #               return diff_index
+
+    # for x, y in zip(line1,line2):
+    #     if x != y:
+    #         diff_index = line1.index(x)
+    #         return diff_index
+    #     # comment: 
     # END FOR
 
-line1 = "She wasn't doing a thing that I could see, except standing there leaning on the balcony railing, holding the universe together"
-line2 = "She wasn't doing a thing that I could see, except standing there sitting on the stairs, holding the universe together"
+line1 = "She wasn't doing a thing that I could see, except standing there leaning on the stairs, holding the universes"
+line2 = "She wasn't doing a thing that I could see, except standing there leaning on the stairs, holding the universe together"
+# print(singleline_diff(line1,line2))
+print(line1.index(' '))
 
-print(singleline_diff(line1,line2))
 
 # def singleline_diff_format(line1, line2, idx):
 #     """

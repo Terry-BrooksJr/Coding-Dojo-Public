@@ -11,72 +11,65 @@ print(type(fruit))  # Tuples, access value
 print(pizza_toppings[1]) # Accessing series 
 pizza_toppings.append('Mushrooms')  # change value
 print(person['name'])  # List˜, access value
-person['name'] = 'George' #List, change value
-person['eye_color'] = 'blue'  # List, change value
-print(fruit[2])  # List, Access Value
+person['name'] = 'George'
+person['eye_color'] = 'blue'
+print(fruit[2])
 
-if num1 > 45:  #conditional, if/else
+if num1 > 45:
     print("It's greater")
 else:
     print("It's lower")
 
-if len(string) < 5: #conditional, else if 
+if len(string) < 5:
     print("It's a short word!")
 elif len(string) > 15:
     print("It's a long word!")
 else:
     print("Just right!")
 
-for x in range(5): #for loop, start
+for x in range(5):
     print(x)
-for x in range(2,5): #for loop  start  Range 
+for x in range(2,5):
     print(x)
-for x in range(2,10,3): #for loop, start Range 
+for x in range(2,10,3):
     print(x)
 x = 0
-while(x < 5): #While loop, start
+while(x < 5):
     print(x)
     x += 1
 
-pizza_toppings.pop() #List, Value Change last Item 
-pizza_toppings.pop(1) #List, Value Change, 2nd Item
+pizza_toppings.pop()
+pizza_toppings.pop(1)
 
-print(person)  #Funtion, Value Access
-person.pop('eye_color') #List Value Change
-print(person)  # Funtion, Value Access
+print(person)
+person.pop('eye_color')
+print(person)
 
-for topping in pizza_toppings: #For Loop Start
-    if topping == 'Pepperoni': # Expression, Conditional Accessing Equality
-        continue #Continue Keyword 
-    print('After 1st if statement') 
-    if topping == 'Olives':  # Expression, Conditional Accessing Equality
-        break #ke ywored
-def print_hello_ten_times():  #function definition 
+for topping in pizza_toppings:
+    if topping == 'Pepperoni':
+        continue
+    print('After 1st if statement')
+    if topping == 'Olives':
+        break
+
+def print_hello_ten_times():
     for num in range(10):
         print('Hello')
-2
-print_hello_ten_times() #Un-argmented function call 
 
+print_hello_ten_times()
 
-def print_hello_x_times(x):  # function definition
+def print_hello_x_times(x):
     for num in range(x):
         print('Hello')
 
+print_hello_x_times(4)
 
-print_hello_x_times(4)  # -argmented function call
-
-
-def print_hello_x_or_ten_times(x=10):  # function definition
+def print_hello_x_or_ten_times(x = 10):
     for num in range(x):
         print('Hello')
 
-
-print_hello_x_or_ten_times()  # Un-argmented function call
-
-
-print_hello_x_or_ten_times(4)  # argmented function call
-
-
+print_hello_x_or_ten_times()
+print_hello_x_or_ten_times(4)
 
 
 """
