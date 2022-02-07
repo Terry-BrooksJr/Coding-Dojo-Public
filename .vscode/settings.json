@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
-        "Jalepenos"
+        "Jalepenos",
+        "mult"
     ],
     "javascript.preferences.importModuleSpecifier": "relative",
     "prettier.resolveGlobalModules": true,
