@@ -3,25 +3,29 @@ class Ninja:
         self.first_name = first_name
         self.last_name = last_name
         self.treat = treats
-        self.pet_food = pet_food
-        self.pet = pet
+        self.pet_food =  pet_food
+        self.pet = Pet()
     def walk():
-        pass
+        self.Pet.play()
+        return self
     def feed():
-        pass
+        self.Pet.eat()
+        return self
     def bathe():
-        pass 
+        self.Pet.noise()
+        return self 
 
 class Pet:
-    def __init__(self, name, type, tricks):
+    def __init__(self, name, type, tricks, health=50):
         self.name = name
+        self.health = health
         self.type = type
         self.tricks = tricks
-    def sleep():
+    def sleep(self):
         pass
-    def eat():
+    def eat(self):
         pass
-    def play():
+    def play(self):
         pass
-    def noise():
+    def noise(self):
         pass 
