@@ -8,15 +8,17 @@ class User:
         self.account_balance = opening_deposit
     def make_withdrawal(self, amount):
         self.account_balance -= amount
-        return self.account_balance
+        return self
     def display_user_balance(self):
         print(f'Account Holder: {self.last_name},{self.first}, Current Available Balance: $ {self.account_balance} USD.')
+        return self
     def transfer_money(self, other_user, amount):
         self.account_balance -= amount
         other_user.account_balance += amount
+        return self
     def make_deposit(self, amount):
         self.account_balance += amount
-        return self.account_balance
+        return self
 
 Lucky = User('Lucky','TA',32,2000)
 Ryan = User('Ryan','Magley',32,10000)
