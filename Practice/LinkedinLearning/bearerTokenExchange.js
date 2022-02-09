@@ -13,6 +13,4 @@ const accessTokenExchange = async() => {
         }
     );
     return response.json();
-};
-
-console.log(accessTokenExchange);
+}
