@@ -1,4 +1,3 @@
-X=5
 class Ninja:
     def __init__(self,first_name,last_name,treats,pet_food):
         self.first_name = first_name
@@ -34,6 +33,10 @@ class Pet:
     def play(self):
         if self.Health.energy < 15:
             self.Health.anger += 5
+        else:
+            self.Health.lonliness -= 10
+            self.Health.boredom -= 25
+            self.Health.energy - 15
     def noise(self):
         pass
 
@@ -44,3 +47,25 @@ class Health:
         self.boredom = boredom
         self.anger = anger
         self.lonliness = lonliness
+
+class Bird(Pet):
+    def __init__(self, name, type, tricks,wing_span,flight):
+        super().__init__(name, type, tricks)
+        self.name = name
+        self.type = type
+        self.wing_span = wing_span
+        self.flight = flight 
+    def fly(self):
+        if self.Health.energy < 15:
+            self.Health.anger += 5
+        else:
+            self.Health.energy - 15
+
+
+class Dog(Pet):
+    def __init__(self, name, type, tricks):
+        super().__init__(name, type, tricks);
+
+class Cat(Pet):
+    def __init__(self, name, type, tricks):
+        super().__init__(name, type, tricks)
