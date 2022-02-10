@@ -1,6 +1,0 @@
-import Ninja from .dojo_pets_classes
-import Health from .dojo_pets_classes
-import Bird from .dojo_pets_classes
-import Pet from .dojo_pets_classes
-import Dog from .dojo_pets_classes
-import Cat from .dojo_pets_classes
