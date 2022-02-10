@@ -4,7 +4,7 @@ class Ninja:
         self.last_name = last_name
         self.treat = treats
         self.pet_food =  pet_food
-        self.pet = Pet(self.)
+        self.pet = Pet()
     def walk(self):
         self.Pet.play(self)
         return self
