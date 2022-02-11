@@ -127,3 +127,13 @@ body {
   color: black;
   border-radius: 50%;
 }
+#dojo-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+#dojo-img{
+  height:auto;
+  width:50%;
+  position: relative, left:40px;
+}
