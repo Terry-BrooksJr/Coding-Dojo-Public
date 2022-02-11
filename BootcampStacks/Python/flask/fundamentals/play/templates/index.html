@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flask Playground</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            display: grid;
+        }
+        
+        .blue-box {
+            height: 1in;
+            width: 1in;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    {% for i in range(0,{{num_of_boxes}}) %} boxes += f'
+    <div class="blue-box"> </div>\n' print(boxes) {%endfor%}
+
+</body>
+
+</html>
