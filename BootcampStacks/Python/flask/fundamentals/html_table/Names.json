@@ -1,12 +1,4 @@
-from flask import Flask,redirect,url_for,render_template,request
-from json import dumps
-
-app=Flask(__name__)
-
-@app.route('/',methods=['GET','POST'])
-def render_table():
-    users = [
-        {"first_name":"Marney","last_name":"Newborn"},
+[{"first_name":"Marney","last_name":"Newborn"},
 {"first_name":"Wendye","last_name":"Doughton"},
 {"first_name":"Bobby","last_name":"Proudlock"},
 {"first_name":"Hinda","last_name":"Byatt"},
@@ -506,8 +498,3 @@ def render_table():
 {"first_name":"Hoebart","last_name":"Moran"},
 {"first_name":"Axe","last_name":"Eiler"},
 {"first_name":"Isac","last_name":"Frith"}]
-    return render_template('html-table.html', users = users)
-
-if __name__ == '__main__':
-    #DEBUG is SET to TRUE. CHANGE FOR PROD
-    app.run(port=5000,debug=True)
