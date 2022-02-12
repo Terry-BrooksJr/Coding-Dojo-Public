@@ -1,0 +1,12 @@
+table td tr {
+    height: 50px;
+    width: 50px;
+}
+
+.box-a {
+    background-color: silver;
+}
+
+.box-b {
+    background-color: purple;
+}
