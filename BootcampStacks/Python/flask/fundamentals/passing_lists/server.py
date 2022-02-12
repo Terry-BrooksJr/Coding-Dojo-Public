@@ -1,7 +1,7 @@
 from flask import Flask,redirect,url_for,render_template,request
 from random import random
 
-\]
+
 
 @app.route('/lists')
 def render_lists():
