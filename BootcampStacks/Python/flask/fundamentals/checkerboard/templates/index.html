@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Checkerboard - Terry Brooks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
@@ -17,16 +17,16 @@
 <body>
     <table>
         <tr>
-            {% for i in range(0,int:side1):%}
-            <td class='box-a'></td>
+            {% for i in range(side1):%}
+            <td class="box-a"></td>
             <td class="box-b"></td>
-            {%end for%}
+            {%endfor%}
         </tr>
         <tr>
-            {% for j in range(0,int:side2):%}
-            <td class='box-b'></td>
+            {% for j in range(side2):%}
+            <td class="box-b"></td>
             <td class="box-a"></td>
-            {%end for%}
+            {%endfor%}
         </tr>
     </table>
 </body>

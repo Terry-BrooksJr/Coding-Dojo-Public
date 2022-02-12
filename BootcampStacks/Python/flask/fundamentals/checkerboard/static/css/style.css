@@ -1,4 +1,11 @@
-table td tr {
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+table td {
     height: 50px;
     width: 50px;
 }

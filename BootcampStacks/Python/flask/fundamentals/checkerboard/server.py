@@ -2,9 +2,9 @@ from flask import Flask,redirect,url_for,render_template,request
 
 app=Flask(__name__)
 
-@app.route('/<int:side1>,<int:side2>')
-def home():
-    return render_template('index.html',)
+@app.route('/<int:side1>/<int:side2>')
+def home(side1, side2):
+    return render_template('index.html',side1=side1,side2=side2)
 
 if __name__ == '__main__':
 
