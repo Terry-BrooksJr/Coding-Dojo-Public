@@ -1,0 +1,51 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "setUpServerVirtualEnv",
+            "type": "shell",
+            "command": "pipenv",
+            "args": [
+                "install",
+                "flask"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+        },
+        {
+            "label": "startVE",
+            "type": "shell",
+            "command": "pipenv",
+            "args": [
+                "python3",
+                "server.py"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            {
+            "label":"setItUp",
+            "dependsOrder": "sequence",
+            "dependsOn": "[setUpServerVirtualEnv,]"
+            },
+        }
+    ]
