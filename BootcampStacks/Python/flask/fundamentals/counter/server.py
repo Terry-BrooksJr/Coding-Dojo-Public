@@ -1,28 +1,44 @@
-from flask import Flask,redirect,url_for,render_template,request,session
 from datetime import datetime
+from itertools import accumulate
+from urllib import response
+
+from flask import Flask, redirect, render_template, session, url_for, flash, session, sessions
+
 app=Flask(__name__)
 app.secret_key = 'cyCcv3VR9K6vYXuqz4dvbAhP_eFsKyJ2NKwq@--sZcCbDHkTN6'
+app.session_cookie_name = 'accumulator'
 
-
-@app.route('/',methods=['GET'])
-def index():
-    session['accumulator'] = request.form['accumulator']
-    return render_template('index.html')
-
-@app.route('/log_cookie')
-def log_cookie():
-    if 'visits' in session:
-        # reading and updating session data
-    session['visits'] = session.get('visits') + 1
+@app.route('/')
+def visit_check():
+    if accumulator == 0 or  collect_cookies:
+        template_accumulator = collect_cookies['accumulator']
+        return redirect("/home/<int:template_accumulator>", template_accumulator=template_accumulator)
     else:
-    session['visits'] = 1  # setting session data
-    return "Total visits: {}".format(session.get('visits'))
+        session['accumulator'] = 0
+        template_accumulator = session['accumulator'] = 0
+        redirect("/home/<int:template_accumulator>",
+                 template_accumulator=template_accumulator)
+   
+        
+@app.route('/home/<int:template_accumulator>', methods=['GET', 'POST'])
+def index(template_accumulator):
+    template_accumulator = template_accumulator
+    session['accumulator'] = request.form['accumulator']
+    return render_template('index.html', template_accumulator=template_accumulator)
 
+@app.route('/process', methods=['POST'])
+def abacus(accumulator):
+    accumulator = int(accumulator)
+    session['accumulator']= request.form['accumulator']
+    
+    
+    
 @app.route('/reset')
 def reset():
     session.clear()  # delete visits
-    return 'Visits deleted'
+    flash('Count Reset')
 
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
     app.run(port=5000,debug=True)
+
