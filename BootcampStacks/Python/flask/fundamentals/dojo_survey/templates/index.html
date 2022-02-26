@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Flat HTML5/CSS3 Login Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>CodePen - Dojo Survey</title>
+    <link rel='stylesheet' href='https://kit.fontawesome.com/acb1a51e7b.js'>
+    <link rel="stylesheet" href="./ .css">
 
 </head>
 
@@ -12,25 +13,34 @@
     <!-- partial:index.partial.html -->
     <div class="login-page">
         <div class="form">
-            <form class="register-form">
-                <input type="text" placeholder="name" />
-                <input type="password" placeholder="password" />
-                <input type="text" placeholder="email address" />
-                <button>create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
             <form class="login-form">
-                <input type="text" placeholder="username" />
-                <input type="password" placeholder="password" />
-                <button>login</button>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
-            </form>
-        </div>
-    </div>
-    <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="./script.js"></script>
+                <i class="fa-solid fa-square-poll-horizontal fa-4x"></i>
+                <h1>Dojo Survey</h1>
+                <input type="text" placeholder="Ninja Name" name="name" />
+                <label for="location">Dojo Location</>
+          <select id="location" class="select" name="location">
+            <option  value="Bellevue">Bellevue,WA</option>
+            <option value="Los Angeles">Los Angeles, CA</option>
+            <option value="Silicon Valley">Silicon Valley,CA</option>
+            <option value="Boise">Boise, ID</option>
+            <option value="Chicago">Chicago, IL</option>
+            </select>
+              <label for="lang">Favorite Programming Langugage</>
+           <select id="lang" class="select" name="language">
+            <option value="python"></i>Python</option>
+            <option value="javascript">Javascript</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            </select>
+      <input type="textarea" name="commnent" rows="4" cols"50" placeholder="Comments"/>
+      <button type="submit" formaction="/process_submission">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://kit.fontawesome.com/acb1a51e7b.js'></script><script  src="./script.js"></script>
 
 </body>
-
 </html>
