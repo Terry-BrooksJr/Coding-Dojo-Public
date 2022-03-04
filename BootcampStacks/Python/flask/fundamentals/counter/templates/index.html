@@ -3,36 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Order Confirmation Page</title>
+    <title>Terry Brooks - Counter</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/BootcampStacks/Python/flask/fundamentals/counter/static/style.css')}}">
+    <link rel="stylesheet" "{{ url_for('static', filename='style.css') }}">
 
 </head>
 
 <body>
     <!-- partial:index.partial.html -->
-    <div class="columns">
-        <div class="column main">
-            <div id="authenticationPopup" data-bind="scope:'authenticationPopup'">
-                <div class="success-extras">
-                    <i class="fa fa-calculator fa-5x"></i>
+    <div class="columns ">
+        <div class="column main ">
+            <div id="authenticationPopup " data-bind="scope: 'authenticationPopup' ">
+                <div class="success-extras ">
+                    <i class="fa fa-calculator fa-5x "></i>
                     <br>
                     <p>Let's Get Counting</p>
-                    <input name="accumulator" id="accumulator" value="{{template_accumulator}}">
-                    <hr class="divider">
-                    <div id="btn-container">
+                    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %} {{ message }} {% endfor %} {% endif %} {% endwith %}
+                    <input name="accumulator " id="accumulator " value="{{template_accumulator}} ">
+                    <hr class="divider ">
+                    <div id="btn-container ">
                         <form>
-                            <button type="submit" formaction="/" method="post" class="raise">Add</button>
-                            <button type="submit" formaction="/reset`" class="raise" id="reset">Reset</button>
+                            <button type="submit " formaction="/ " method="post " class="raise ">Add</button>
+                            <button type="submit " formaction="/reset` " class="raise " id="reset ">Reset</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- partial -->
-    <script src="{{url_for('static', filename= '/BootcampStacks/Python/flask/fundamentals/counter/static/script.js')}}">
+    <!-- partial -->asa `cccd`
+
+    <script src="{{url_for( 'static', filename='./static/script.js' )}} ">
     </script>
 
 </body>
