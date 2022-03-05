@@ -11,12 +11,12 @@ def home():
 
 @app.route('/process', methods=['POST','GET'])
 def process():
-    submissions = jsonify(request.form)
+    print(request.form)
     # submissions[request.form['name']] = {'name':request.form['name']}
     # submissions[request.form['location']] = {'dojo_location': request.form['location']},
-    # submissions[request.form['name']] = {'fav_prog_lang': request.form['language']}
-    with open('submissions','w') as submission_file:
-        json.dump(submissions, submission_file)
+    # # submissions[request.form['name']] = {'fav_prog_lang': request.form['language']}
+    # with open('submissions','w') as submission_file:
+    #     json.dump(submissions, submission_file)
     return redirect(url_for('confirmation'),308)
 
 @app.route('/confirmation')
