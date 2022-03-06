@@ -38,7 +38,7 @@ def add_location():
       visit.add(name, description, category)
 
   ## Redirect to locations route function
-  return ""
+  return render_template('locations.html')
 
 
 @app.route("/")
