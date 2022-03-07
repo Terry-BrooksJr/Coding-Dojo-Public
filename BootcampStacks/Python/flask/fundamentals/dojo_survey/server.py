@@ -11,6 +11,8 @@ def home():
 
 @app.route('/process', methods=['POST','GET'])
 def process():
+    submission = {}
+    submissions[request.form['name']] = {'name':}
     ninja_name = [request.form['name']],
     dojo_location= [request.form['location']],
     fav_prog_lang = [request.form['language']]
